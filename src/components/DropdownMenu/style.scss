@@ -1,0 +1,28 @@
+#languageSelector {
+  button {
+    background-color: #fafbfc;
+    appearance: none;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: rgba(27,31,35,0.15);
+    box-shadow: 0px 1px 0px rgba(27,31,35,0.04), inset 0px 1px 0px rgba(255,255,255,0.25);
+    color: #24292e;
+
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 5px 16px;
+  }
+
+  .dropdown-items {
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgba(27,31,35,0.15);
+    box-shadow: 0px 1px 0px rgba(27,31,35,0.04), inset 0px 1px 0px rgba(255,255,255,0.25);
+    color: #24292e;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
