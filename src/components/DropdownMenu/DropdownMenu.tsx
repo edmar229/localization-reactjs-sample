@@ -1,11 +1,14 @@
 import { useState } from 'react';
 
-import { DropdownMenuItem } from '../DropdownMenuItem/DropdownMenu';
+import { DropdownMenuItem } from '../DropdownMenuItem/DropdownMenuIten';
+import languageMetadata from "../../localization/translations.json";
 
 import './style.scss';
 
 export function DropdownMenu() {
   const [showMenu, setShowMenu] = useState(false);
+
+  const languages = Object.entries(languageMetadata);
 
   function handleClick() {
     setShowMenu(!showMenu);
@@ -21,9 +24,11 @@ export function DropdownMenu() {
 
       { showMenu ? (
         <div className="dropdown-items">
-          <DropdownMenuItem/>
-          <DropdownMenuItem/>
-          <DropdownMenuItem/>
+          { languages.map((language, index) => {
+            return <DropdownMenuItem code={language[0]} key={index}>
+              {language[1].language}
+            </DropdownMenuItem>
+          }) }
         </div>
       ) : ( <></> ) }
     </div>
