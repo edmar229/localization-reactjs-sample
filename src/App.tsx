@@ -1,10 +1,13 @@
+import { LanguageProvider } from './contexts/LanguageContext';
 import { Home } from "./pages/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <Home/>
+      </div>
+    </LanguageProvider>
   );
 }
 

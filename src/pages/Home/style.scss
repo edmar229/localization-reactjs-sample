@@ -6,10 +6,6 @@
   justify-content: center;
   padding-bottom: 80px;
   padding: 0 4% 80px 4%;
-
-   > h1 {
-    padding: 10px 0px;
-  }
 }
 
 .language-code {
@@ -30,4 +26,8 @@
   h1 {
     font-size: 4rem;
   }
+}
+
+.translation-text {
+  padding: 10px 0px;
 }
