@@ -30,4 +30,15 @@
     width: 200px;
     overflow: auto;
   }
+
+  @media (min-height: 1024px) {
+    button {
+      font-size: 2.2rem;
+    }
+
+    .dropdown-items {
+      height: 21.5rem;
+      width: inherit;
+    }
+  }
 }

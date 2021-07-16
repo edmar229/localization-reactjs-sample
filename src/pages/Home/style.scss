@@ -31,3 +31,29 @@
 .translation-text {
   padding: 10px 0px;
 }
+
+@media (max-width: 250px) {
+  .language-code {
+    width: 10.5rem;
+    height: 10.5rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-height: 1024px) {
+  .language-code {
+    width: 25rem;
+    height: 25rem;
+
+    h1 {
+      font-size: 6rem;
+    }
+  }
+
+  .translation-text {
+    font-size: 6rem;
+  }
+}
