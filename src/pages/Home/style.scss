@@ -1,5 +1,10 @@
 .container {
-  min-height: 95vh;
+  &.dark {
+    background-color: #0d1117;
+    color: #fff;
+  }
+
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +14,12 @@
 }
 
 .language-code {
+  &.dark {
+    background-color: #21262d;
+    color: #fff;
+    border-color: #30363d;
+  }
+
   background-color: rgb(3, 177, 162);
   color: #fff;
   box-shadow: 0px 0px 5px 0px #333333;

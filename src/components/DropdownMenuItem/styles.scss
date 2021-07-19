@@ -1,8 +1,22 @@
 button {
+  &.dark {
+    background-color: #21262d;
+    border-color: #30363d;
+    color: #c9d1d9;
+    box-shadow: 0 0 transparent, 0 0 transparent;
+  }
+  
   margin: 2px;
 }
 
 .code {
+  &.dark {
+    background-color: #21262d;
+    border-color: #30363d;
+    color: #c9d1d9;
+    box-shadow: 0 0 transparent, 0 0 transparent;
+  }
+
   border-radius: 4px;
   margin-right: 4px;
   padding: 2px;
